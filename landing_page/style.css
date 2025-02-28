@@ -1,0 +1,160 @@
+*{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+html,body{
+    width: 100%;
+    overflow-x:hidden;
+}
+
+/*  */
+nav ul{
+    width: 100%; 
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav li{
+    height : 50px ;
+}
+nav a{
+    height : 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: none;
+    width: 250px;
+    z-index: 2; 
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(19, 19, 19, 0.3);
+    
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+#menubtn{
+    display: none;
+    
+}
+/*  */
+.main{
+    background-color: rgb(48, 86, 211);
+    color: whitesmoke;
+}
+#navbar-items{
+    color: white;
+    position: fixed;
+    top: 0;
+    background-color: rgb(48, 86, 211);
+    width: 100%;
+    z-index: 1000; 
+}
+a:hover{
+    color: rgb(186, 180, 180);
+    cursor: pointer;
+}
+.para{
+    color: whitesmoke;
+}
+.about , .faq{
+    background-color: #f3f4fe;
+}
+.rowdesign{
+    background-color: white;
+
+}
+.full-width-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.paraa{
+    color: rgb(77, 77, 77);
+}
+.custom-gradient {
+    background: linear-gradient(to top, #1895ec, #2f59d4);
+}
+
+.new:hover{
+    background-color: #3056d3 !important;
+    color: white !important;
+}
+.mid{
+    transform: scale(1.07);
+}
+.rot{
+    transform: rotateZ(45deg) ,
+}
+
+.rot {
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+
+.back {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background-color: lightblue;
+    transition: transform 0.5s ease;
+    transform: rotate(25deg);
+    border-radius: 10px;
+}
+
+.front {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background-color:#3056d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.how:hover .back {
+   transform: rotate(45deg);
+}
+@media(max-width:900px){
+    .nonav{
+        display: none;
+
+    }
+    #menubtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+    }
+    #closebtn{
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+    }
+}
